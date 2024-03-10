@@ -1200,6 +1200,7 @@ MonoBehaviour:
   - {fileID: 836895622}
   defaultAnswerSprite: {fileID: 21300000, guid: dd69c5b95b6900b47b746c3529669541, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: becb3f59f9729e84dbc5a88b1f285005, type: 3}
+  timerImage: {fileID: 773088706}
 --- !u!224 &1455799402 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4733486831043845469, guid: d0b1546f01c955942b399e682cb210e7, type: 3}
@@ -1382,7 +1383,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToCompleteQuestion: 30
   timeToShowCorrectAnswer: 10
+  loadNextQuestion: 0
   isAnsweringQuestion: 0
+  fillFraction: 0
 --- !u!4 &1606144066
 Transform:
   m_ObjectHideFlags: 0
