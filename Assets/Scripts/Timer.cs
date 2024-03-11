@@ -15,6 +15,11 @@ public class Timer : MonoBehaviour
     float timerValue;
 
 
+    void Awake() 
+    {
+        updateTimer();    
+    }
+
     void Update()
     {
        updateTimer(); 

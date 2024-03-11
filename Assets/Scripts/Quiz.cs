@@ -9,7 +9,8 @@ public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] QusetionSO question;
+    [SerializeField] List<QusetionSO> questions = new List<QusetionSO>();
+    QusetionSO currentQuestion;
     [Header("Answers")]
     [SerializeField] GameObject [] answerButtons;
     int correctAnswerIndex;
@@ -17,14 +18,26 @@ public class Quiz : MonoBehaviour
     [Header("Button Colors")]  
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
+    [SerializeField] Sprite wrongAnswerSprite;
     [Header("Timer")]
     [SerializeField] Image timerImage;
     Timer timer;
+    [Header("Scoring")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    ScoreKeeper scoreKeeper;
+
+    [Header("Progress Bar")]
+    [SerializeField] Slider progressBar;
+
+    public bool isComplete;
+
+
     void Start()
     {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();   
         timer = FindObjectOfType<Timer>();
-        GetNextQuestion();
-       //DisplayQuestion(); 
+        progressBar.maxValue = questions.Count;
+        progressBar.value = 0;
     }
 
     void Update()
@@ -36,46 +49,74 @@ public class Quiz : MonoBehaviour
             GetNextQuestion();
             timer.loadNextQuestion = false;
         }
-        else if(!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        else if(!hasAnsweredEarly && !timer.isAnsweringQuestion && currentQuestion != null)
         {
             DisplayAnswer(-1);
             SetButtonState(false);
         }
     }
+   
+    private void DisplayAnswer(int index)
+    {
+        if (index == currentQuestion.GetCorrectAnswerIndex())
+        {
+            questionText.text = "Correct";
+            SetDefaultButtonSprite(correctAnswerSprite, index, false);
+            scoreKeeper.IncrementCorrectAnswers();
+        }
+        else
+        {
+            correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
+            string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
+            questionText.text = "Good try, but the correct answer is :\n" + correctAnswer;
+            SetDefaultButtonSprite(correctAnswerSprite, correctAnswerIndex, false);
+            if(index >= 0 && index <= answerButtons.Length)
+            {
+                SetDefaultButtonSprite(wrongAnswerSprite, index, false);
+            }
 
-    public void OnAnswerSelected(int index)
+        }
+    }
+
+     public void OnAnswerSelected(int index)
     {
         hasAnsweredEarly = true;
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
-    }
+        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
 
-    private void DisplayAnswer(int index)
-    {
-        if (index == question.GetcorrectAnswerIndex())
+        if(progressBar.value == progressBar.maxValue)
         {
-            questionText.text = "Correct";
-            SetDefaltButtonSprite(correctAnswerSprite, index, false);
-        }
-        else
-        {
-            correctAnswerIndex = question.GetcorrectAnswerIndex();
-            string correctAnswer = question.GetAnswer(correctAnswerIndex);
-            questionText.text = "Good try, but the correct answer is :\n" + correctAnswer;
-            SetDefaltButtonSprite(correctAnswerSprite, correctAnswerIndex, false);
-
+            isComplete = true;
         }
     }
 
-    void GetNextQuestion()  //untested
+    void GetNextQuestion()
     {
+        if(questions.Count > 0)
+        {
         SetButtonState(true);
-        SetDefaltButtonSprite(defaultAnswerSprite, 0, true);
+        SetDefaultButtonSprite(defaultAnswerSprite, 0, true);
+        GetRandomQuestion();
         DisplayQuestion();
+        progressBar.value++;
+        scoreKeeper.IncrementQuestionsSeen();
+        }
+        
     }
 
-    private void SetDefaltButtonSprite(Sprite sprite, int index, bool cycle)
+    void GetRandomQuestion()
+    {
+        int index = UnityEngine.Random.Range(0, questions.Count);
+        currentQuestion = questions[index];
+        if(questions.Contains(currentQuestion))
+        {
+            questions.Remove(currentQuestion);
+        }
+    }
+
+    private void SetDefaultButtonSprite(Sprite sprite, int index, bool cycle)
     {
         Image buttonImage;
         if(cycle == true)
@@ -95,12 +136,12 @@ public class Quiz : MonoBehaviour
 
     void DisplayQuestion()
     {
-        questionText.text = question.GetQuestion();
+        questionText.text = currentQuestion.GetQuestion();
 
         for(int i = 0; i < answerButtons.Length; i++)
         {
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = question.GetAnswer(i);
+            buttonText.text = currentQuestion.GetAnswer(i);
         }
     }
 

@@ -22,7 +22,7 @@ public class QusetionSO : ScriptableObject
         return answers[index];
     }
 
-    public int GetcorrectAnswerIndex()
+    public int GetCorrectAnswerIndex()
     {
         return correctAnswerIndex;
     }
