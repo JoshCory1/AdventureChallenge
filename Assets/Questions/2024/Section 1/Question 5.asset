@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
-  m_Name: d=d
+  m_Name: Question 5
   m_EditorClassIdentifier: 
-  question: 'd=d
-
-'
+  question: "why did God Give his Son in this verse:\nFor God so loved the world,
+    that he gave his only begotten Son, that whosoever believeth in him should not
+    perish, but have everlasting life.\r"
   answers:
-  - s
-  - d
-  - f
-  - r
-  correctAnswerIndex: 1
+  - He loves the world(us)
+  - To stop climate change
+  - He liked the people in Israel
+  - We Dont Know why
+  correctAnswerIndex: 0

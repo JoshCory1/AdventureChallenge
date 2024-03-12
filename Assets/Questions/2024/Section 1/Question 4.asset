@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
-  m_Name: c=c
+  m_Name: Question 4
   m_EditorClassIdentifier: 
-  question: 'c=c
+  question: 'whe can get everlasting life in this verse:
 
-'
+    For God so loved the
+    world, that he gave his only begotten Son, that whosoever believeth in him should
+    not perish, but have everlasting life.'
   answers:
-  - c
-  - v
-  - d
-  - r
-  correctAnswerIndex: 0
+  - Every one
+  - All who believe
+  - No one
+  - Some one else
+  correctAnswerIndex: 1

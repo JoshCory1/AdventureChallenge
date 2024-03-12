@@ -9,19 +9,23 @@ public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] List<QusetionSO> questions = new List<QusetionSO>();
-    QusetionSO currentQuestion;
+    [SerializeField] List<QuestionsSO> questions = new List<QuestionsSO>();
+    QuestionsSO currentQuestion;
+
     [Header("Answers")]
     [SerializeField] GameObject [] answerButtons;
     int correctAnswerIndex;
-    bool hasAnsweredEarly;
+    bool hasAnsweredEarly = true;
+
     [Header("Button Colors")]  
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
     [SerializeField] Sprite wrongAnswerSprite;
+
     [Header("Timer")]
     [SerializeField] Image timerImage;
     Timer timer;
+
     [Header("Scoring")]
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
@@ -29,22 +33,33 @@ public class Quiz : MonoBehaviour
     [Header("Progress Bar")]
     [SerializeField] Slider progressBar;
 
+
+    [Header("SFX")]
+    [SerializeField] public float sFXVolume = 0.8f;
+    [SerializeField] public AudioClip clickSFX;
+    SoundFX soundFX;
     public bool isComplete;
 
-
-    void Start()
+    void Awake() 
     {
+        soundFX = FindObjectOfType<SoundFX>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();   
         timer = FindObjectOfType<Timer>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 0;
     }
+    
 
     void Update()
     {
         timerImage.fillAmount = timer.fillFraction;
         if(timer.loadNextQuestion)
         {
+            if(progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                return;
+            }
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
@@ -80,16 +95,14 @@ public class Quiz : MonoBehaviour
 
      public void OnAnswerSelected(int index)
     {
+        soundFX.OnSoundFXClick();
         hasAnsweredEarly = true;
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
         scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
 
-        if(progressBar.value == progressBar.maxValue)
-        {
-            isComplete = true;
-        }
+        
     }
 
     void GetNextQuestion()
