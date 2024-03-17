@@ -601,8 +601,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294619407
-  m_fontColor: {r: 0.06016379, g: 0.69300234, b: 0.9811321, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -987,8 +987,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294619407
-  m_fontColor: {r: 0.06016379, g: 0.69300234, b: 0.9811321, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1387,8 +1387,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294619407
-  m_fontColor: {r: 0.06016379, g: 0.69300234, b: 0.9811321, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1671,8 +1671,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294619407
-  m_fontColor: {r: 0.05882353, g: 0.69411767, b: 0.98039216, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1805,8 +1805,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294619407
-  m_fontColor: {r: 0.06016379, g: 0.69300234, b: 0.9811321, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2253,12 +2253,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 8491025299435972090}
   questions:
-  - {fileID: 11400000, guid: 6c278bfd381dc0e4e8c67d87ed9e0a6b, type: 2}
-  - {fileID: 11400000, guid: ca8c9e3db6266cb428b58250729b8e1f, type: 2}
-  - {fileID: 11400000, guid: ca0f1ba62c450f84c8ca731adefa567a, type: 2}
-  - {fileID: 11400000, guid: ee5dca0f08613594caddd3397a413549, type: 2}
-  - {fileID: 11400000, guid: 8d760c9c85930b2469a407537b87751c, type: 2}
-  - {fileID: 11400000, guid: 818e9c6088dbb3c4799f13e8e2ac3b3d, type: 2}
+  - {fileID: 11400000, guid: 6b6492a01fa8ee04f93a32ad4e7e4388, type: 2}
+  - {fileID: 11400000, guid: 19742c0240bec7e4d869306ca7aad4e5, type: 2}
+  - {fileID: 11400000, guid: 3b780dae2f9c87f4482a1f626fd0c242, type: 2}
+  - {fileID: 11400000, guid: fd516631fbdcfc34ab9c5eafc3187d0f, type: 2}
+  - {fileID: 11400000, guid: c95e947ddaa015c4795d04346d7dba52, type: 2}
+  - {fileID: 11400000, guid: fbcaad90f8c84a84c811123f01df371c, type: 2}
   answerButtons:
   - {fileID: 1500641264365086653}
   - {fileID: 7747804519751705296}

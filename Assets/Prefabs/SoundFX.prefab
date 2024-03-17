@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e57758f49c0fc4b8bfa7842b938d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundFXVolume: 0.8
+  soundFXVolume: 1
   clickFX: {fileID: 8300000, guid: 00879066f0b541c45bea23e1a13d7f14, type: 3}
 --- !u!82 &1105619756311004344
 AudioSource:
@@ -58,7 +58,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

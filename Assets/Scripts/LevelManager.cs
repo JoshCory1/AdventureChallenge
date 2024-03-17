@@ -26,41 +26,25 @@ public class LevelManager : MonoBehaviour
 
     public void OnReplayLevel(int index)
     {
-        SetDefaultButtonSprite(selectedSprite, index, false);
+        StartCoroutine(ReplayLevel());
+    }
+
+    IEnumerator ReplayLevel()
+    {
         soundFX.OnSoundFXClick();
+        yield return new WaitForSeconds(.3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-
     public void OnLoadLevel(string lvl)
     {
-        SetDefaultButtonSprite(selectedSprite, 0, true);
-        soundFX.OnSoundFXClick();
-        SceneManager.LoadScene(lvl);
+        StartCoroutine(LoadLevel(lvl));
     }
 
-    void LoadLevel(string lvl)
+    IEnumerator LoadLevel(string lvl)
     {
+        soundFX.OnSoundFXClick();
+        yield return new WaitForSeconds(.3f);
         SceneManager.LoadScene(lvl);
-    }
-
-    private void SetDefaultButtonSprite(Sprite sprite, int index, bool cycle)
-    { 
-        Image buttonImage;
-        if(cycle == true)
-        {
-            for(int i = 0; i < levelButtons.Length; i++ )
-            {
-                buttonImage = levelButtons[i].GetComponent<Image>();
-                buttonImage.sprite = sprite;
-            }
-        }
-        else
-        {
-            buttonImage = levelButtons[index].GetComponent<Image>();
-            buttonImage.sprite = sprite;
-        }
-        
-        
     }
 }

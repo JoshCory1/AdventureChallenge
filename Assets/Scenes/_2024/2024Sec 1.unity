@@ -547,6 +547,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4191777600865755362, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191777600865755362, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191777600865755362, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5282036960165678826, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -575,6 +587,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1401744953}
+    - target: {fileID: 5352270256832513886, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 2024
+      objectReference: {fileID: 0}
     - target: {fileID: 5456276806415269019, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -655,34 +671,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6b6492a01fa8ee04f93a32ad4e7e4388, type: 2}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 19742c0240bec7e4d869306ca7aad4e5, type: 2}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 3b780dae2f9c87f4482a1f626fd0c242, type: 2}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd516631fbdcfc34ab9c5eafc3187d0f, type: 2}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: c95e947ddaa015c4795d04346d7dba52, type: 2}
-    - target: {fileID: 7872127919803097479, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
-      propertyPath: questions.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbcaad90f8c84a84c811123f01df371c, type: 2}
     - target: {fileID: 8243767142302276780, guid: c1df5c641d5814249b8cd2add49a1fef, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -943,21 +931,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2996718130233687916, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718130233687916, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1401744953}
-    - target: {fileID: 2996718130233687916, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnReplayLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 2996718130233687916, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6306990859628965073, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
       propertyPath: m_Name
       value: WinCanvas
@@ -990,10 +966,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1401744953}
-    - target: {fileID: 9123840091915658570, guid: c35c6a9dda4c9f54d8790ae010f4bf6b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnLoadLevel
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
