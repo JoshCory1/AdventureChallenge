@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 7 Question 5
+  m_EditorClassIdentifier: 
+  question: Can we fully understand God's knowledge?
+  answers:
+  - No, its far beyond human comprehension
+  - 'Yes '
+  - The spiritually elite can
+  - Maybe
+  correctAnswerIndex: 0
+  discussionAnswer: God's infinite knowledge is far beyond human comprehension. 
+    But we can certainly still know enough about it and about Him to worship Him
+    in gladness for His perfect knowledge.

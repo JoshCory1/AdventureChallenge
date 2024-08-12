@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 8 Question 5
+  m_EditorClassIdentifier: 
+  question: Why can't a true believer lose his or her salvation?
+  answers:
+  - Because God Himself preserves them
+  - Because they did all the right things
+  - Because their pastor said so
+  - They can lose their salvation
+  correctAnswerIndex: 0
+  discussionAnswer: God personally preserves Christians to the end.  God, who is
+    the strongest and who cannot lie, has promised eternal security for all believers
+    in His Word - He will never let one of His people lose their salvation, and no
+    one can force them out of His hand.

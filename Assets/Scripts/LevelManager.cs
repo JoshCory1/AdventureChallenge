@@ -29,16 +29,28 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(ReplayLevel());
     }
 
-    IEnumerator ReplayLevel()
+   public void OnExit()
+   {
+        StartCoroutine(Exit());
+   }
+
+    public void OnLoadLevel(string lvl)
+    {
+        StartCoroutine(LoadLevel(lvl));
+    }
+
+     IEnumerator ReplayLevel()
     {
         soundFX.OnSoundFXClick();
         yield return new WaitForSeconds(.3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void OnLoadLevel(string lvl)
+    IEnumerator Exit()
     {
-        StartCoroutine(LoadLevel(lvl));
+        soundFX.OnSoundFXClick();
+        yield return new WaitForSeconds(.3f);
+        Application.Quit();
     }
 
     IEnumerator LoadLevel(string lvl)

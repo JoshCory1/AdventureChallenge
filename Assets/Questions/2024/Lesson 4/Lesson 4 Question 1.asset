@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 4 Question 1
+  m_EditorClassIdentifier: 
+  question: Why does creation exist?
+  answers:
+  - So I can go fishing
+  - To bring Glory to God
+  - To go to school
+  - So I can live however I want
+  correctAnswerIndex: 1
+  discussionAnswer: God made all of creation for His own glory, and to give Him that
+    glory is all of creation's obligation.

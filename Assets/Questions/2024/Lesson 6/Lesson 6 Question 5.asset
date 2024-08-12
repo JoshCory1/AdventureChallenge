@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 6 Question 5
+  m_EditorClassIdentifier: 
+  question: Why is God worthy of our trust?
+  answers:
+  - Your parents said so
+  - Because God is perfect
+  - Because God makes mistakes
+  - Your pastor said so
+  correctAnswerIndex: 1
+  discussionAnswer: God is the perfect and unchangeable King.  We can trust Him because
+    He is in control of everything, and He always fulfills what He's promised. He
+    says that all who repent and come to Him, He will cleanse and accept.

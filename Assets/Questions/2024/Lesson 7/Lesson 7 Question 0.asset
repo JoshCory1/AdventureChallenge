@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 7 Question 0
+  m_EditorClassIdentifier: 
+  question: What does it mean to be personally known by God?
+  answers:
+  - God saves you as His own
+  - He maybe one day will know you
+  - He once knew you but then forgot
+  - He knows nothing about you
+  correctAnswerIndex: 0
+  discussionAnswer: When God chooses to personally know someone, He adopts them into
+    His family as His own. That means He's saved them.
