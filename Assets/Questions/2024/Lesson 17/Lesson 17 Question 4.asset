@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 17 Question 4
+  m_EditorClassIdentifier: 
+  question: How did Jesus comfort Martha?
+  answers:
+  - He made her a nice shirt
+  - He said your brother would live again
+  - He sang a lullaby
+  - He rubbed her feet
+  correctAnswerIndex: 1
+  discussionAnswer: Martha's brother, Lazarus, had died, and Jesus comforted her
+    by saying that her brother would live again because is the resurrection and the
+    life.

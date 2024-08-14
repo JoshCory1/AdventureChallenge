@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 19 Question 3
+  m_EditorClassIdentifier: 
+  question: What did Jesus promise the disciples when He gave them their mission?
+  answers:
+  - That He would always be with them
+  - They're on their own
+  - Good luck
+  - Try your best
+  correctAnswerIndex: 0
+  discussionAnswer: Jesus promised that He would always be with the church in her
+    mission to proclaim gospel to the world.

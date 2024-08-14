@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 16 Question 2
+  m_EditorClassIdentifier: 
+  question: Why is the gospel so good?
+  answers:
+  - God forgives every sin of a believer
+  - It starts with the letter "G"
+  - Because I said so
+  - It's not
+  correctAnswerIndex: 0
+  discussionAnswer: The gospel is so good because God takes away the sins of His
+    people forever on the grounds of Jesus' accomplished work.

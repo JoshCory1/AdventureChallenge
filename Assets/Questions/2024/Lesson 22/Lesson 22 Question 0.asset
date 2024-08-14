@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 22 Question 0
+  m_EditorClassIdentifier: 
+  question: 'Complete the thought: The Holy Spirit is a/an ____________________'
+  answers:
+  - Equal person of the Godhead
+  - Creation of God
+  - Impersonal force
+  - Positive influence from God
+  correctAnswerIndex: 0
+  discussionAnswer: It is important to affirm that the Holy Spirit is a person because
+    wrong understandings lead to false teaching and error. He is not just a force;
+    He is an equal person of the Trinity, just as the Father and the son are.

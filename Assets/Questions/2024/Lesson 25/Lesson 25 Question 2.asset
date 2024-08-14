@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 25 Question 2
+  m_EditorClassIdentifier: 
+  question: How does the Holy Spirit help Christian to pray?
+  answers:
+  - Ha prays for them when they are weak
+  - He assures them that they are God's children
+  - He prays for them when they have no words
+  - All of the above
+  correctAnswerIndex: 2
+  discussionAnswer: Christians have access to God through Jesus Christ by the Holy
+    Spirit. When God/s children  don't know exactly what words to pray, the Holy
+    Spirit prays according to God's will.

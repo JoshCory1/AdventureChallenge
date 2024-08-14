@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 23 Question 4
+  m_EditorClassIdentifier: 
+  question: In what ways does the Holy Spirit guard believers?
+  answers:
+  - He teaches truth and protects from error
+  - With dogs and alarms
+  - He builds really good fences
+  - He sings songs
+  correctAnswerIndex: 0
+  discussionAnswer: The Holy Spirit teaches and reminds Christians of what is true
+    (John 14:26, 1 John 2:20-21, 26-27), which helps guard them from falling for
+    what is wrong.

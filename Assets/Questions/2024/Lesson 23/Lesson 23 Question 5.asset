@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95f71226bf26bc4caed6a0458a3b538, type: 3}
+  m_Name: Lesson 23 Question 5
+  m_EditorClassIdentifier: 
+  question: True or false - the truth will set you free?
+  answers:
+  - True
+  - False
+  - ..........
+  - ..........
+  correctAnswerIndex: 0
+  discussionAnswer: A genuinely saved and obedient follower of Jesus will know divine
+    truth and so know freedom from sin and from the search for what is real. This
+    divine truth comes not merely by intellectual agreement but through a saving
+    devotion to Jesus Christ.
