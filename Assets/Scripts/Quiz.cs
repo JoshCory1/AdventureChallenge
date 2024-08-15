@@ -83,7 +83,7 @@ public class Quiz : MonoBehaviour
         {
             correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
             string correctAnswer = currentQuestion.GetAnswer(correctAnswerIndex);
-            questionText.text = "Good try, but the correct answer is :\n" + correctAnswer + " :\n" + currentQuestion.GetDiscussionAnswer();
+            questionText.text = "Good try, but the correct answer is: " + "[" + correctAnswer + "]\n" + currentQuestion.GetDiscussionAnswer();
             SetDefaultButtonSprite(correctAnswerSprite, correctAnswerIndex, false);
             if(index >= 0 && index <= answerButtons.Length)
             {
