@@ -1,4 +1,5 @@
 # AdventureChallenge
+Adventure Challenge is intended solely for members of Montana Avenue Baptist church.
 AdventureChallenge is a memory based game to help kids learn bible verses
 and connect the text body with the chapters and verses.
 
